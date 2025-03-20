@@ -1,5 +1,8 @@
 ---
-
+import "../styles/global.css";
+import Hero from "../components/hero.vue";
+import Navigation from "../components/navigation.vue";
+import Chat from "../components/chat.vue";
 ---
 
 <html lang="en">
@@ -11,6 +14,14 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro Boy</h1>
+		<Navigation client:idle />
+		<main>
+			<Hero client:idle />
+
+			<Chat client:idle />
+		</main>
+		<footer>
+
+		</footer>
 	</body>
 </html>
