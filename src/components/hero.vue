@@ -46,7 +46,7 @@ console.log(chunkedImages);
 
 <template>
   <section class="">
-    <div class="p-5 md:p-13 m-3 rounded-2xl bg-slate-50">
+    <div class="p-5 md:p-13 m-3 rounded-2xl bg-slate-50 overflow-x-hidden">
       <div class="grid grid-cols-2 items-center justify-between">
         <div class="col-span-2 md:col-span-1 relative mb-8 md:mb-0">
           <div class="flex flex-col items-start">
