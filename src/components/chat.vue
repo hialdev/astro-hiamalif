@@ -23,7 +23,7 @@ import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
             loop 
             :play-on-hover="true"
             style="height: 63px; width: 63px"
-            src="./../../public/lottie_icons/chat.lottie"
+            src="/lottie_icons/chat.lottie"
           />
         </div>
       </div>

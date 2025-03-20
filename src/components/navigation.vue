@@ -22,7 +22,7 @@ import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
           <DotLottieVue 
             loop 
             style="height: 30px; width: 30px"
-            src="./../../public/lottie_icons/home.lottie"
+            src="/lottie_icons/home.lottie"
             :play-on-hover="true"
           />
         </div>
@@ -44,7 +44,7 @@ import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
           <DotLottieVue 
             loop
             style="height: 30px; width: 30px"
-            src="./../../public/lottie_icons/portofolio.lottie"
+            src="/lottie_icons/portofolio.lottie"
             :play-on-hover="true"
           />
         </div>
@@ -66,7 +66,7 @@ import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
           <DotLottieVue 
             loop
             style="height: 30px; width: 30px"
-            src="./../../public/lottie_icons/myblog.lottie"
+            src="/lottie_icons/myblog.lottie"
             :play-on-hover="true"
           />
         </div>
