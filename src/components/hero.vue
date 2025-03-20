@@ -62,7 +62,7 @@ console.log(chunkedImages);
             <div class="font-handrawn text-emerald-600 animate-wiggle text-2xl ms-[-1em] mt-[2em]">Open to Work!</div>
           </div>
           <div class="max-w-[30em] mb-5">
-            Hi, I am <strong>Alif</strong>, you can call me <strong>AL</strong> because that's sounds cooler! haha. I'm currently a <strong>Gen Z</strong> and <strong>Software Engineer</strong> with <strong>Fullstack Development</strong> ability (Front-end & Back-end) and over <strong>5 years</strong> of Experience
+            Hi, I am <strong>Alif</strong>, you can call me <strong>AL</strong> because thats sounds cooler! Haha. I'm currently a <strong>Gen Z</strong> and <strong>Software Engineer</strong> with <strong>Fullstack Development</strong> ability (Front-end & Back-end) and over <strong>5 years</strong> of Experience
           </div>
           <a href="" class="inline-flex items-center gap-2 px-4 py-1 mt-4 border-2 shadow-own border-dark rounded-xl">
             <div>

@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Hero from "../components/hero.vue";
 import Navigation from "../components/navigation.vue";
 import Chat from "../components/chat.vue";
+import Mywork from "../components/mywork.vue";
 ---
 
 <html lang="en">
@@ -16,7 +17,10 @@ import Chat from "../components/chat.vue";
 	<body>
 		<Navigation client:idle />
 		<main>
+			<!-- Section Hero -->
 			<Hero client:idle />
+			<!-- Section My Works -->
+			<Mywork client:idle />
 
 			<Chat client:idle />
 		</main>
