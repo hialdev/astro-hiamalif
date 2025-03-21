@@ -108,9 +108,9 @@ const sendMessage = () => {
 
     <div class="flex items-center jsustify-center m-3">
       <div class="group flex items-center justify-center cursor-pointer relative">
-        <div v-if="!isClicked" class="hidden group-hover:flex group-active:flex items-end gap-2 absolute bottom-0 start-0 ms-[-4.4em] mb-[3.8em]">
+        <div v-if="!isClicked" class="hidden group-hover:flex group-active:flex items-end gap-1 absolute bottom-0 start-0 ms-[-4.4em] me-[2em] mb-[3.8em]">
           <div class="font-handrawn text-2xl">Discuss Anything!</div>
-          <img src="/icons/arrowskectch.webp" alt="Arrow Sketch Home Menu" class="block">
+          <img src="/icons/arrowskectch.svg" alt="Arrow Sketch Home Menu" class="block">
         </div>
 
         <div v-if="!isClicked" class="group-hover:hidden group-active:hidden absolute top-0 end-0 start-0 bottom-0">

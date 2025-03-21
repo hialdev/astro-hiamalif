@@ -7,9 +7,9 @@ import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
   <header class="fixed bottom-0 start-0 end-0 z-[9999] max-w-[fit-content] mx-auto flex jusitfy-center">
     <div class="inline-flex mx-auto justify-center items-center gap-4 m-5 p-4 bg-white rounded-2xl shadow-2xl">
       <div class="group flex items-center justify-center cursor-pointer relative">
-        <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 end-0 ms-[-4.4em] mb-[2.3em]">
+        <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 end-0 ms-[-6em] me-[1em] mb-[2.3em]">
           <div class="font-handrawn text-2xl">Home</div>
-          <img src="/icons/arrowskectch.webp" alt="Arrow Sketch Home Menu" class="block">
+          <img src="/icons/arrowskectch.svg" alt="Arrow Sketch Home Menu" class="block">
         </div>
 
         <div class="group-hover:hidden group-active:hidden absolute top-0 end-0 start-0 bottom-0">
@@ -29,9 +29,9 @@ import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
       </div>
       <div class="group flex items-center justify-center cursor-pointer relative">
 
-        <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 start-0 ms-[-6.4em] mb-[2.6em]">
+        <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 start-0 ms-[-6.4em] me-[1em] mb-[2.6em]">
           <div class="font-handrawn text-2xl whitespace-nowrap">My Works</div>
-          <img src="/icons/arrowskectch.webp" alt="Arrow Sketch Home Menu" class="block">
+          <img src="/icons/arrowskectch.svg" alt="Arrow Sketch Home Menu" class="block">
         </div>
 
         <div class="group-hover:hidden group-active:hidden absolute top-0 end-0 start-0 bottom-0">
@@ -51,8 +51,8 @@ import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
       </div> 
       <div class="group flex items-center justify-center cursor-pointer relative">
 
-        <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 start-0 me-[-6em] mb-[2.6em]">
-          <img src="/icons/arrowskectch.webp" alt="Arrow Sketch Home Menu" class="block scale-x-[-1]">
+        <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 start-0 me-[-6em] ms-[1em] mb-[2.6em]">
+          <img src="/icons/arrowskectch.svg" alt="Arrow Sketch Home Menu" class="block scale-x-[-1]">
           <div class="font-handrawn text-2xl whitespace-nowrap">My Blog</div>
         </div>
 
