@@ -4,33 +4,33 @@ import { ref } from 'vue';
 
 const isClicked = ref(false);
 
-const chats = [
-  { is_user: 1, message: "Hey! How's your day going?", timestamp: "2025-03-20 10:00:01" },
-  { is_user: 0, message: "Pretty good! Working on some code. You?", timestamp: "2025-03-20 10:00:05" },
-  { is_user: 1, message: "Nice! I'm trying to learn Vue and Astro.", timestamp: "2025-03-20 10:00:10" },
-  { is_user: 1, message: "It seems interesting but a bit confusing.", timestamp: "2025-03-20 10:00:12" },
-  { is_user: 0, message: "Yeah, the learning curve can be tricky.", timestamp: "2025-03-20 10:00:15" },
-  { is_user: 1, message: "Exactly! Any tips to get started faster?", timestamp: "2025-03-20 10:00:18" },
-  { is_user: 0, message: "Start with small projects and use the docs a lot!", timestamp: "2025-03-20 10:00:22" },
-  { is_user: 1, message: "That makes sense. What are you building now?", timestamp: "2025-03-20 10:00:27" },
-  { is_user: 1, message: "Still working on that web app?", timestamp: "2025-03-20 10:00:30" },
-  { is_user: 0, message: "Yeah, refining the UI with Tailwind.", timestamp: "2025-03-20 10:00:35" },
-  { is_user: 1, message: "Tailwind is amazing! So much faster than writing CSS.", timestamp: "2025-03-20 10:00:40" },
-  { is_user: 1, message: "Which component library are you using?", timestamp: "2025-03-20 10:00:44" },
-  { is_user: 0, message: "I'm using shadcn/ui. It's simple but powerful!", timestamp: "2025-03-20 10:00:48" },
-  { is_user: 1, message: "I've heard about it! Is it better than Bootstrap?", timestamp: "2025-03-20 10:00:52" },
-  { is_user: 1, message: "Or would you still recommend Bootstrap?", timestamp: "2025-03-20 10:00:54" },
-  { is_user: 0, message: "It depends. Bootstrap is great for quick layouts, but Tailwind is more flexible.", timestamp: "2025-03-20 10:00:58" },
-  { is_user: 1, message: "Got it! I'll try Tailwind first then.", timestamp: "2025-03-20 10:01:02" },
-  { is_user: 1, message: "By the way, do you use animations in Vue?", timestamp: "2025-03-20 10:01:06" },
-  { is_user: 0, message: "Yes! Vue has built-in transition components.", timestamp: "2025-03-20 10:01:09" },
-  { is_user: 1, message: "Oh nice! I'll check that out.", timestamp: "2025-03-20 10:01:12" },
-  { is_user: 1, message: "I also need to make an image slider. Any good libraries?", timestamp: "2025-03-20 10:01:16" },
-  { is_user: 0, message: "Swiper.js is solid! It works well with Vue.", timestamp: "2025-03-20 10:01:20" },
-  { is_user: 1, message: "Awesome! I'll try integrating it.", timestamp: "2025-03-20 10:01:24" },
-  { is_user: 1, message: "Thanks for the help! You're a lifesaver.", timestamp: "2025-03-20 10:01:28" },
-  { is_user: 0, message: "No worries! Happy coding!", timestamp: "2025-03-20 10:01:32" }
-];
+const chats = ref([
+  // { is_user: 1, message: "Hey! How's your day going?", timestamp: "2025-03-20 10:00:01" },
+  // { is_user: 0, message: "Pretty good! Working on some code. You?", timestamp: "2025-03-20 10:00:05" },
+  // { is_user: 1, message: "Nice! I'm trying to learn Vue and Astro.", timestamp: "2025-03-20 10:00:10" },
+  // { is_user: 1, message: "It seems interesting but a bit confusing.", timestamp: "2025-03-20 10:00:12" },
+  // { is_user: 0, message: "Yeah, the learning curve can be tricky.", timestamp: "2025-03-20 10:00:15" },
+  // { is_user: 1, message: "Exactly! Any tips to get started faster?", timestamp: "2025-03-20 10:00:18" },
+  // { is_user: 0, message: "Start with small projects and use the docs a lot!", timestamp: "2025-03-20 10:00:22" },
+  // { is_user: 1, message: "That makes sense. What are you building now?", timestamp: "2025-03-20 10:00:27" },
+  // { is_user: 1, message: "Still working on that web app?", timestamp: "2025-03-20 10:00:30" },
+  // { is_user: 0, message: "Yeah, refining the UI with Tailwind.", timestamp: "2025-03-20 10:00:35" },
+  // { is_user: 1, message: "Tailwind is amazing! So much faster than writing CSS.", timestamp: "2025-03-20 10:00:40" },
+  // { is_user: 1, message: "Which component library are you using?", timestamp: "2025-03-20 10:00:44" },
+  // { is_user: 0, message: "I'm using shadcn/ui. It's simple but powerful!", timestamp: "2025-03-20 10:00:48" },
+  // { is_user: 1, message: "I've heard about it! Is it better than Bootstrap?", timestamp: "2025-03-20 10:00:52" },
+  // { is_user: 1, message: "Or would you still recommend Bootstrap?", timestamp: "2025-03-20 10:00:54" },
+  // { is_user: 0, message: "It depends. Bootstrap is great for quick layouts, but Tailwind is more flexible.", timestamp: "2025-03-20 10:00:58" },
+  // { is_user: 1, message: "Got it! I'll try Tailwind first then.", timestamp: "2025-03-20 10:01:02" },
+  // { is_user: 1, message: "By the way, do you use animations in Vue?", timestamp: "2025-03-20 10:01:06" },
+  // { is_user: 0, message: "Yes! Vue has built-in transition components.", timestamp: "2025-03-20 10:01:09" },
+  // { is_user: 1, message: "Oh nice! I'll check that out.", timestamp: "2025-03-20 10:01:12" },
+  // { is_user: 1, message: "I also need to make an image slider. Any good libraries?", timestamp: "2025-03-20 10:01:16" },
+  // { is_user: 0, message: "Swiper.js is solid! It works well with Vue.", timestamp: "2025-03-20 10:01:20" },
+  // { is_user: 1, message: "Awesome! I'll try integrating it.", timestamp: "2025-03-20 10:01:24" },
+  // { is_user: 1, message: "Thanks for the help! You're a lifesaver.", timestamp: "2025-03-20 10:01:28" },
+  // { is_user: 0, message: "No worries! Happy coding!", timestamp: "2025-03-20 10:01:32" }
+])
 
 const timeAgo = (timestamp) => {
   const now = new Date();
@@ -55,6 +55,15 @@ const timeAgo = (timestamp) => {
   return `${diffInDays} hari yang lalu`;
 };
 
+const message = ref("")
+
+const sendMessage = () => {
+  let isReply = message.value.startsWith("/r")
+  const obj_chat = { is_user: !isReply, message: isReply ? message.value.replace(/^\/r\s/, "") : message.value, timestamp: Date.now() }
+  chats.value.push(obj_chat)
+  message.value = ""
+}
+
 </script>
 
 <template>
@@ -63,13 +72,16 @@ const timeAgo = (timestamp) => {
       <div class="flex items-center gap-2 mb-5">
         <img src="/me.jpg" alt="Chat Image for Me" class="aspect-square rounded-full w-[3em]">
         <div>
-          <div class="text-lg font-semibold">Aleeyah</div>
-          <div class="text-sm text-slate-400">Personal Assistant ( but its still Me 🗿)</div>
+          <div class="font-semibold">Aleeyah</div>
+          <div class="text-xs text-slate-400">Personal Assistant ( but its still Me 🗿)</div>
         </div>
       </div>
 
       <div class="flex-1 overflow-auto">
-        <div v-for="(chat, index) in chats" class="">
+        <div class="bg-slate-50 text-slate-500 p-3 text-xs mb-3">
+          Start Conversation with me Now! I will reply you within a minute. Your conversation will be privated and stored for 3 days. Dont hesitate Ask me Anything! except how to understand the w0m4N 🗿
+        </div>
+        <div v-for="(chat, index) in chats" :key="index" class="">
           <div v-if="chat.is_user" class="rounded-3xl p-4 border rounded-br-none bg-slate-50 mb-2 text-xs ms-10">
             <div>
               {{ chat.message }}
@@ -87,8 +99,8 @@ const timeAgo = (timestamp) => {
       </div>
 
       <div class="flex items-end gap-3 mt-3">
-        <textarea name="" id="" class="flex-1 shadow-own border-2 text-xs p-3 rounded-xl bg-slate-100" placeholder="Type Message.." rows="3"></textarea>
-        <button class="p-3 bg-slate-900 text-purple-100 rounded-full flex items-center justify-center">
+        <textarea v-model="message" id="" class="flex-1 shadow-own border-2 text-xs p-3 rounded-xl bg-slate-100" placeholder="Type Message.." rows="3"></textarea>
+        <button @click="sendMessage" class="cursor-pointer p-3 bg-slate-900 text-purple-100 rounded-full flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><defs><path id="lsiconSendFilled0" d="M12.97 2.67a.5.5 0 0 0-.64-.64l-11 4a.5.5 0 0 0-.016.934l4.433 1.773l2.9-3.09l.707.707l-2.98 3.176l1.662 4.156a.5.5 0 0 0 .934-.015z"/></defs><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><use href="#lsiconSendFilled0"/><use href="#lsiconSendFilled0"/></g></svg>
         </button>
       </div>
