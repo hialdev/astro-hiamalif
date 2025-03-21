@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 import { Carousel, Slide } from 'vue3-carousel'
 
 const works = [
@@ -33,12 +34,63 @@ const carouselConfig = {
     }
   }
 }
+const categories = [
+  { id: "study-case" ,title: "Study Case", description: "Provides an in-depth look at the process, including behind-the-scenes insights, analytical journey, system flow, user journey, and solution discovery." },
+  { id: "ui" ,title: "UI", description: "Showcases the user interface design created for this case." },
+  { id: "tech-stack" ,title: "Tech Stack", description: "Details the technologies used and the roles involved in this case." },
+  { id: "live-demo" ,title: "Live Demo", description: "Experience the demo firsthand with interactive visuals and functionality." }
+]
+const selectedCategory = ref(null);
+const getCategory = () => {
+  return categories.find(item => item.id === selectedCategory.value);
+}
 </script>
 <template>
   <div class="m-3">
     <div class="p-5 md:p-13 mb-5">
       <h2 class="font-handrawn text-2xl mb-2">My Works</h2>
       <div class="max-w-[25em]">All my work is a lovely journey; the more I learn, the more I realize how little I know.</div>
+      
+      <div class="mt-4">
+        <div class="flex items-center gap-1 cursor-pointer">
+          <div v-for="(item, index) in categories" 
+              :key="item.id"
+              class="group relative cursor-pointer"
+              @click="selectedCategory = item.id">
+
+            <!-- Kategori -->
+            <div class="mb-2 inline-block p-1 px-2 font-handrawn text-lg bg-slate-50 hover:bg-purple-100 rounded-full whitespace-nowrap">
+              {{ item.title }}
+            </div>
+
+            <!-- Tooltip Deskripsi -->
+            <div v-if="item.description" 
+                :class="['absolute z-[4] mt-[-0.5em] w-fit flex items-start gap-2 invisible group-hover:visible group-active:visible', index > 2 ? 'end-0 me-[1em]' : 'ms-[1em] ']">
+              
+              <!-- Ikon -->
+              <div v-if="index <= 2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="35" viewBox="0 0 33 35" fill="none">
+                  <path d="M1.39527 1.3347C0.994525 2.68733 0.994525 4.19024 1.19489 5.64306C1.39527 7.14597 1.8461 8.59879 2.39712 10.0015C3.44906 12.6567 4.90174 15.1114 6.70507 17.3157C10.6123 22.0248 15.8219 25.4314 21.5325 27.5355C23.7365 28.3371 25.9406 28.9382 28.2449 29.4392C27.6938 29.0384 27.0927 28.5375 26.4916 28.0365C24.6382 26.4835 22.8349 24.7802 21.1818 22.9767C20.8813 22.626 20.9314 22.0749 21.0816 21.6742C21.1317 21.4738 21.5325 20.7724 21.833 21.1231C23.436 22.8264 25.1391 24.4796 26.9425 25.9825C27.8441 26.734 28.7458 27.4353 29.6475 28.1367C30.0983 28.4874 30.5491 28.838 31.05 29.1386C31.3005 29.339 31.551 29.4893 31.8014 29.6897C32.0018 29.7899 32.2022 30.0404 32.4025 29.9402C32.6029 29.8901 32.7031 29.9903 32.8033 30.1406C32.9536 30.341 33.0037 30.7918 33.0037 30.9421C32.9536 31.393 32.8033 31.894 32.4025 32.0944C28.7959 33.948 24.7885 34.9499 20.731 35C20.5807 35 20.4805 34.7495 20.4304 34.6493C20.3803 34.3988 20.3803 34.1483 20.4304 33.8979C20.5306 33.5973 20.731 33.0462 21.1317 33.0462C23.7866 32.9961 26.3914 32.5452 28.8961 31.6936C23.1855 30.6415 17.6252 28.6377 12.8164 25.3813C7.95739 22.0749 3.8498 17.4159 1.59564 11.9553C0.142952 8.34831 -0.558344 4.44073 0.543693 0.633343C0.643878 0.382857 0.944433 -0.218309 1.29508 0.0822745C1.69582 0.33276 1.49545 1.03412 1.39527 1.3347Z" fill="#231F20"/>
+                </svg>
+              </div>
+
+              <div v-if="index > 2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="35" viewBox="0 0 33 35" fill="none">
+                  <path d="M31.6121 1.3347C32.0128 2.68733 32.0128 4.19024 31.8124 5.64306C31.6121 7.14597 31.1612 8.59879 30.6102 10.0015C29.5583 12.6567 28.1056 15.1114 26.3023 17.3157C22.395 22.0248 17.1854 25.4314 11.4749 27.5355C9.27079 28.3371 7.06671 28.9382 4.76246 29.4392C5.31347 29.0384 5.91458 28.5375 6.51569 28.0365C8.36912 26.4835 10.1725 24.7802 11.8255 22.9767C12.1261 22.626 12.076 22.0749 11.9257 21.6742C11.8756 21.4738 11.4749 20.7724 11.1743 21.1231C9.57134 22.8264 7.86819 24.4796 6.06486 25.9825C5.1632 26.734 4.26153 27.4353 3.35987 28.1367C2.90904 28.4874 2.4582 28.838 1.95727 29.1386C1.70681 29.339 1.45635 29.4893 1.20589 29.6897C1.00552 29.7899 0.80515 30.0404 0.60478 29.9402C0.404409 29.8901 0.304219 29.9903 0.204034 30.1406C0.0537566 30.341 0.00366346 30.7918 0.00366346 30.9421C0.053756 31.393 0.204039 31.894 0.60478 32.0944C4.21144 33.948 8.21884 34.9499 12.2763 35C12.4266 35 12.5268 34.7495 12.5769 34.6493C12.627 34.3988 12.627 34.1483 12.5769 33.8979C12.4767 33.5973 12.2763 33.0462 11.8756 33.0462C9.22069 32.9961 6.61588 32.5452 4.11126 31.6936C9.8218 30.6415 15.3821 28.6377 20.191 25.3813C25.0499 22.0749 29.1575 17.4159 31.4117 11.9553C32.8644 8.34831 33.5657 4.44073 32.4636 0.633343C32.3634 0.382857 32.0629 -0.218309 31.7122 0.0822745C31.3115 0.33276 31.5119 1.03412 31.6121 1.3347Z" fill="#231F20"/>
+                </svg>
+              </div>
+
+              <!-- Teks Deskripsi -->
+              <div :class="['w-full min-w-[15em] mt-3 text-slate-900 rounded-2xl text-sm p-4 bg-slate-50 border border-slate-900', index > 2 ? 'order-first' : '']">
+                {{ item.description }}
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
     <div class="">
       <Carousel v-bind="carouselConfig">
@@ -54,7 +106,7 @@ const carouselConfig = {
                   </svg>
                 </div>
                 <div class="font-handrawn flex items-center gap-1 text-sm md:text-lg">
-                  <span class="p-1 px-2 bg-purple-100 rounded-full whitespace-nowrap">Studycase</span>
+                  <span class="p-1 px-2 bg-purple-100 rounded-full whitespace-nowrap">Study Case</span>
                   <span class="p-1 px-2 bg-purple-100 rounded-full whitespace-nowrap">UI</span>
                   <span class="p-1 px-2 bg-purple-100 rounded-full whitespace-nowrap">Techstack</span>
                   <span class="p-1 px-2 bg-purple-100 rounded-full whitespace-nowrap">Live Demo</span>
