@@ -4,7 +4,7 @@ import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
 </script>
 
 <template>
-  <header class="fixed bottom-0 start-0 end-0 z-[9999] flex jusitfy-center">
+  <header class="fixed bottom-0 start-0 end-0 z-[9999] max-w-[fit-content] mx-auto flex jusitfy-center">
     <div class="inline-flex mx-auto justify-center items-center gap-4 m-5 p-4 bg-white rounded-2xl shadow-2xl">
       <div class="group flex items-center justify-center cursor-pointer relative">
         <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 end-0 ms-[-4.4em] mb-[2.3em]">
