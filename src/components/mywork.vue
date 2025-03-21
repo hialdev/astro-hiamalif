@@ -58,7 +58,7 @@ const getCategory = () => {
               class="group relative cursor-pointer"
               @click="selectedCategory = item.id">
 
-            <div class="mb-2 inline-block p-1 px-2 font-handrawn text-lg bg-slate-50 hover:bg-purple-100 rounded-full whitespace-nowrap">
+            <div class="mb-2 inline-block p-1 px-2 font-handrawn text-lg bg-slate-50 group-hover:bg-purple-100 group-active:bg-purple-100 rounded-full whitespace-nowrap">
               {{ item.title }}
             </div>
 
