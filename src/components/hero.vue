@@ -54,7 +54,7 @@ console.log(chunkedImages);
             <!-- <div class="w-[7em] animate-bouncein h-[4em] mb-3 bg-purple-100 rounded-3xl flex items-center justify-center">
               <DotLottieVue autoplay class="h-[24em] w-[20em] object-cover" src="./../../public/lottie_icons/hi.lottie" />
             </div> -->
-            <h1 class="text-4xl md:text-5xl mb-0 max-w-[12em] font-semibold text-dark font-dmsans inline">Hello Mate!, Welcome to My Personal Room</h1>
+            <h1 class="text-4xl md:text-5xl mb-0 max-w-[12em] font-semibold text-dark font-dmsans inline">Hello Mate! 👋, Welcome to My Personal Room</h1>
           </div>
           <div class="flex items-center my-8">
             <img src="/me.jpg" width="170" height="170" alt="Foto aing" class="w-[100px] h-[100px] md:w-[170px] md:h-[170px] block aspect-square rounded-full">
