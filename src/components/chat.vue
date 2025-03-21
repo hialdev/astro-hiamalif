@@ -59,7 +59,7 @@ const timeAgo = (timestamp) => {
 
 <template>
   <div :class="['fixed flex flex-col items-end end-0 bottom-0 m-5 z-[10]', isClicked ? 'top-0 start-0' : '']">
-    <div v-if="isClicked" class="rounded-3xl rounded-br-none flex-1 mb-2 bg-white shadow-2xl w-full max-w-[40em] p-5 start-0 end-0 h-full">
+    <div v-if="isClicked" class="flex flex-col rounded-3xl rounded-br-none flex-1 mb-2 bg-white shadow-2xl w-full max-w-[40em] p-5 start-0 end-0 h-full max-h-[85.5vh]">
       <div class="flex items-center gap-2 mb-5">
         <img src="/me.jpg" alt="Chat Image for Me" class="aspect-square rounded-full w-[3em]">
         <div>
@@ -68,7 +68,7 @@ const timeAgo = (timestamp) => {
         </div>
       </div>
 
-      <div class="h-[58vh] overflow-auto">
+      <div class="flex-1 overflow-auto">
         <div v-for="(chat, index) in chats" class="">
           <div v-if="chat.is_user" class="rounded-3xl p-4 border rounded-br-none bg-slate-50 mb-2 text-sm ms-10">
             <div>
