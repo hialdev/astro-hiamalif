@@ -58,8 +58,8 @@ const timeAgo = (timestamp) => {
 </script>
 
 <template>
-  <div :class="['fixed flex flex-col items-end end-0 bottom-0 m-5 z-[10]', isClicked ? 'top-0 start-0' : '']">
-    <div v-if="isClicked" class="flex flex-col rounded-3xl rounded-br-none flex-1 mb-2 bg-white shadow-2xl w-full max-w-[40em] p-5 start-0 end-0 h-full max-h-[85.5vh]">
+  <div :class="['fixed flex flex-col items-end end-0 bottom-0 m-2 z-[10]', isClicked ? 'start-0' : '']">
+    <div v-if="isClicked" class="flex flex-col rounded-3xl rounded-br-none flex-1 bg-white shadow-2xl w-full max-w-[40em] p-5 start-0 end-0 h-full max-h-[86.5vh]">
       <div class="flex items-center gap-2 mb-5">
         <img src="/me.jpg" alt="Chat Image for Me" class="aspect-square rounded-full w-[3em]">
         <div>
@@ -70,31 +70,31 @@ const timeAgo = (timestamp) => {
 
       <div class="flex-1 overflow-auto">
         <div v-for="(chat, index) in chats" class="">
-          <div v-if="chat.is_user" class="rounded-3xl p-4 border rounded-br-none bg-slate-50 mb-2 text-sm ms-10">
+          <div v-if="chat.is_user" class="rounded-3xl p-4 border rounded-br-none bg-slate-50 mb-2 text-xs ms-10">
             <div>
               {{ chat.message }}
             </div>
-            <div class="text-xs text-slate-500">{{ timeAgo(chat.timestamp) }}</div>
+            <div class="text-[10px] text-slate-500">{{ timeAgo(chat.timestamp) }}</div>
           </div>
 
-          <div v-if="!chat.is_user" class="rounded-3xl p-4 rounded-bl-none bg-slate-900 text-white mb-2 text-sm me-10">
+          <div v-if="!chat.is_user" class="rounded-3xl p-4 rounded-bl-none bg-slate-900 text-white mb-2 text-xs me-10">
             <div>
               {{ chat.message }}
             </div>
-            <div class="text-xs text-slate-300">{{ timeAgo(chat.timestamp) }}</div>
+            <div class="text-[10px] text-slate-300">{{ timeAgo(chat.timestamp) }}</div>
           </div>
         </div>
       </div>
 
       <div class="flex items-end gap-3 mt-3">
-        <textarea name="" id="" class="flex-1 shadow-own border-2 p-3 rounded-xl bg-slate-100" placeholder="Type Message.." rows="3"></textarea>
+        <textarea name="" id="" class="flex-1 shadow-own border-2 text-xs p-3 rounded-xl bg-slate-100" placeholder="Type Message.." rows="3"></textarea>
         <button class="p-3 bg-slate-900 text-purple-100 rounded-full flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><defs><path id="lsiconSendFilled0" d="M12.97 2.67a.5.5 0 0 0-.64-.64l-11 4a.5.5 0 0 0-.016.934l4.433 1.773l2.9-3.09l.707.707l-2.98 3.176l1.662 4.156a.5.5 0 0 0 .934-.015z"/></defs><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><use href="#lsiconSendFilled0"/><use href="#lsiconSendFilled0"/></g></svg>
         </button>
       </div>
     </div>
 
-    <div class="flex items-center jsustify-center">
+    <div class="flex items-center jsustify-center m-3">
       <div class="group flex items-center justify-center cursor-pointer relative">
         <div v-if="!isClicked" class="hidden group-hover:flex group-active:flex items-end gap-2 absolute bottom-0 start-0 ms-[-4.4em] mb-[3.8em]">
           <div class="font-handrawn text-2xl">Discuss Anything!</div>
