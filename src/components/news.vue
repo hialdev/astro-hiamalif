@@ -54,7 +54,7 @@ const news = [
       <p class="max-w-[50em]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis sequi mollitia eaque architecto maxime nesciunt iste reiciendis repellat consequuntur, voluptate placeat veniam dolorem fuga, quod numquam voluptatum? Dolorum, commodi?</p>
 
       <div class="grid grid-cols-4 mt-8 gap-5 perspective-[1500px]">
-        <div v-for="(item, index) in news" :key="item.id" class="col-span-4 md:col-span-2 lg:col-span-1 bg-white border-2 border-white hover:border-slate-900 active:border-slate-900 cursor-pointer transition-all rounded-2xl p-5 hover:translate-z-10 hover:rotate-y-0 hover:shadow-[5px_5px_0px_0px_#000] active:shadow-[5px_5px_0px_0px_#000]">
+        <div v-for="(item, index) in news" :key="item.id" class="col-span-4 md:col-span-2 lg:col-span-1 bg-white border-2 border-slate-900 md:border-white md:hover:border-slate-900 cursor-pointer transition-all rounded-2xl p-5 hover:translate-z-10 hover:rotate-y-0 shadow-[5px_5px_0px_0px_#000] md:shadow-none md:hover:shadow-[5px_5px_0px_0px_#000] active:shadow-[5px_5px_0px_0px_#000]">
           <img src="https://placehold.co/160x90" alt="" class="block aspect-video w-full rounded-2xl object-cover overflow-hidden">
           <div class="mt-3 mb-3">
             <h6 class="text-sm/4 md:text-lg/6 mb-1 font-medium">{{ item.title }}</h6>
