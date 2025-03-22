@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Hero from "../components/hero.vue";
 import Navigation from "../components/navigation.vue";
 import Chat from "../components/chat.vue";
+import News from "../components/news.vue";
 import Mywork from "../components/mywork.vue";
 ---
 
@@ -21,6 +22,8 @@ import Mywork from "../components/mywork.vue";
 			<Hero client:idle />
 			<!-- Section My Works -->
 			<Mywork client:idle />
+			<!-- Section News / Blog -->
+			<News />	
 
 			<Chat client:idle />
 		</main>
