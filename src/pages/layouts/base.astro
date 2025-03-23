@@ -24,23 +24,23 @@ const currentUrl = Astro.url;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-    <meta name="description" content={description} />
-    <meta name="keywords" content={keywords} />
+		<title>{title ?? "Muhammad Nur Alif - Full Stack Developer & Gen Z Engineer"}</title>
+    <meta name="description" content={description ?? "Muhammad Nur Alif, software engineer, Gen Z developer, web development, frontend, backend, full stack, programming, coding portfolio"} />
+    <meta name="keywords" content={keywords ?? "Muhammad Nur Alif, software engineer, Gen Z developer, web development, frontend, backend, full stack, programming, coding portfolio"} />
     <meta name="author" content="Muhammad Nur Alif" />
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={title ?? "Muhammad Nur Alif - Full Stack Developer & Gen Z Engineer"} />
+    <meta property="og:description" content={description ?? "Muhammad Nur Alif, software engineer, Gen Z developer, web development, frontend, backend, full stack, programming, coding portfolio"} />
     <meta property="og:image" content={image} />
     <meta property="og:url" content={currentUrl} />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:title" content={title ?? "Muhammad Nur Alif - Full Stack Developer & Gen Z Engineer"} />
+    <meta name="twitter:description" content={description ?? "Muhammad Nur Alif, software engineer, Gen Z developer, web development, frontend, backend, full stack, programming, coding portfolio"} />
     <meta name="twitter:image" content={image} />
 
     <!-- Favicon -->
