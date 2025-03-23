@@ -59,7 +59,7 @@ const getCategory = () => {
               class="group relative cursor-pointer"
               @click="selectedCategory = item.id">
 
-            <div class="mb-2 inline-block p-1 px-2 font-handrawn text-lg bg-slate-50 group-hover:bg-purple-100 group-active:bg-purple-100 rounded-full whitespace-nowrap">
+            <div class="mb-2 inline-block p-1 px-2 font-handrawn text-lg bg-slate-50 group-hover:bg-gradient-to-r group-active:bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">
               {{ item.title }}
             </div>
 
@@ -115,10 +115,10 @@ const getCategory = () => {
                   </svg>
                 </div>
                 <div class="font-handrawn flex items-center gap-1 text-sm md:text-lg">
-                  <span class="p-1 px-2 bg-purple-100 rounded-full whitespace-nowrap">Study Case</span>
-                  <span class="p-1 px-2 bg-purple-100 rounded-full whitespace-nowrap">UI</span>
-                  <span class="p-1 px-2 bg-purple-100 rounded-full whitespace-nowrap">Techstack</span>
-                  <span class="p-1 px-2 bg-purple-100 rounded-full whitespace-nowrap">Live Demo</span>
+                  <span class="p-1 px-2 bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">Study Case</span>
+                  <span class="p-1 px-2 bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">UI</span>
+                  <span class="p-1 px-2 bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">Techstack</span>
+                  <span class="p-1 px-2 bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">Live Demo</span>
                 </div>
               </div>
               <h2 class="text-lg md:text-xl text-slate-900 font-bold">{{ work.title }}</h2>

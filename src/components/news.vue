@@ -2,6 +2,7 @@
 const news = [
   {
     id: 1,
+    is_learning_pack: 0,
     title: "Teknologi AI Terbaru di 2025",
     slug: "teknologi-ai-terbaru-2025",
     excerpt: "Perkembangan terbaru dalam dunia kecerdasan buatan yang akan mengubah industri.",
@@ -9,6 +10,7 @@ const news = [
   },
   {
     id: 2,
+    is_learning_pack: 0,
     title: "Pasar Saham Mengalami Kenaikan Drastis",
     slug: "pasar-saham-meningkat-2025",
     excerpt: "Indeks saham utama mengalami lonjakan signifikan dalam beberapa pekan terakhir.",
@@ -16,6 +18,7 @@ const news = [
   },
   {
     id: 3,
+    is_learning_pack: 1,
     title: "Tren Fashion Musim Panas Tahun Ini",
     slug: "tren-fashion-2025",
     excerpt: "Warna dan desain pakaian yang akan mendominasi musim panas tahun ini.",
@@ -23,6 +26,7 @@ const news = [
   },
   {
     id: 4,
+    is_learning_pack: 0,
     title: "Mobil Listrik dengan Jarak Tempuh Terpanjang",
     slug: "mobil-listrik-jarak-tempuh",
     excerpt: "Produsen otomotif mengembangkan teknologi baterai terbaru untuk mobil listrik.",
@@ -30,6 +34,7 @@ const news = [
   },
   {
     id: 5,
+    is_learning_pack: 1,
     title: "Startup Teknologi yang Harus Diwaspadai",
     slug: "startup-teknologi-2025",
     excerpt: "Daftar startup yang berpotensi mengubah industri teknologi di masa depan.",
@@ -37,6 +42,7 @@ const news = [
   },
   {
     id: 6,
+    is_learning_pack: 0,
     title: "Pola Makan Sehat untuk Hidup Lebih Panjang",
     slug: "pola-makan-sehat",
     excerpt: "Bagaimana makanan sehat dapat membantu meningkatkan usia harapan hidup.",
@@ -50,13 +56,16 @@ const news = [
   <section class="bg-slate-50 m-3 rounded-2xl">
     <div class="p-5 md:p-13 mb-5">
       <h4 class="font-handrawn text-xl text-purple-800">Read My Articles!</h4>
-      <h2 class="text-3xl font-medium mb-1">Sharing is Carrying, Thinking is Pusing</h2>
-      <p class="max-w-[50em]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis sequi mollitia eaque architecto maxime nesciunt iste reiciendis repellat consequuntur, voluptate placeat veniam dolorem fuga, quod numquam voluptatum? Dolorum, commodi?</p>
+      <h2 class="text-3xl font-medium mb-1">Sharing is Caring, Be Usefull Before Lossfull</h2>
+      <p class="max-w-[50em]">Take a time for read My Articles or learn new thing with Learn Pack for free! Give the stars ✨ if you like it, comment if you hate it ⚡ </p>
 
       <div class="grid grid-cols-4 mt-8 gap-5 perspective-[1500px]">
         <div v-for="(item, index) in news" :key="item.id" class="col-span-4 md:col-span-2 lg:col-span-1 bg-white border-2 border-slate-900 md:border-white md:hover:border-slate-900 cursor-pointer transition-all rounded-2xl p-5 hover:translate-z-10 hover:rotate-y-0 shadow-[5px_5px_0px_0px_#000] md:shadow-none md:hover:shadow-[5px_5px_0px_0px_#000] active:shadow-[5px_5px_0px_0px_#000]">
           <img src="https://placehold.co/160x90" alt="" class="block aspect-video w-full rounded-2xl object-cover overflow-hidden">
           <div class="mt-3 mb-3">
+            <div class="mb-2 inline-block p-1 px-3 font-handrawn bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">
+              {{ item.is_learning_pack ? 'Learning Pack' : 'Article' }}
+            </div>
             <h6 class="text-sm/4 md:text-lg/6 mb-1 font-medium">{{ item.title }}</h6>
             <p class="line-clamp-2 text-xs md:text-sm text-slate-500">{{ item.excerpt }}</p>
           </div>
