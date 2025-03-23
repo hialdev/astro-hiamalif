@@ -56,7 +56,7 @@ const news = [
   <section class="bg-slate-50 m-3 rounded-2xl">
     <div class="p-5 md:p-13 mb-5">
       <h4 class="font-handrawn text-xl text-purple-800">Read My Articles!</h4>
-      <h2 class="text-3xl font-medium mb-1">Sharing is Caring, Be Usefull Before Lossfull</h2>
+      <h2 class="text-3xl font-medium mb-1">Sharing is Caring, Be Useful Before Lossful</h2>
       <p class="max-w-[50em]">Take a time for read My Articles or learn new thing with Learn Pack for free! Give the stars ✨ if you like it, comment if you hate it ⚡ </p>
 
       <div class="grid grid-cols-4 mt-8 gap-5 perspective-[1500px]">
@@ -95,7 +95,7 @@ const news = [
               </div>
               <div class="font-handrawn text-slate-900">14000</div>
             </div>
-            <div class="flex items-center justify-center p-1 px-2 hover:bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 m-1 rounded-lg gap-2">
+            <div class="flex items-center justify-center p-1 px-2 hover:bg-gradient-to-r active:bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 m-1 rounded-lg gap-2">
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M3.70981 4.71008L3.71008 4.70981C4.30779 4.11159 5.10447 3.78721 6.34805 3.61995C7.60456 3.45096 9.24824 3.45 11.5 3.45H13.875C14.9879 3.45 15.8001 3.45024 16.4437 3.49408C17.0832 3.53764 17.5234 3.62273 17.8958 3.77672C18.4174 3.99306 18.8913 4.31002 19.2904 4.70951C19.6896 5.10903 20.0061 5.58326 20.222 6.10512L20.2223 6.1058C20.3767 6.47744 20.4621 6.91715 20.5058 7.55655C20.5498 8.19997 20.55 9.01208 20.55 10.125C20.55 11.2379 20.5498 12.05 20.5058 12.6936C20.4621 13.3331 20.3767 13.7732 20.2222 14.1456L20.2221 14.1457C19.7855 15.1991 18.9483 16.0359 17.8947 16.472L17.8942 16.4723C17.5226 16.6267 17.0829 16.7121 16.4435 16.7558C15.8 16.7998 14.9879 16.8 13.875 16.8H6.997C6.98917 16.8 6.98065 16.7999 6.97151 16.7999C6.88089 16.7992 6.72975 16.798 6.58771 16.8566C6.44521 16.9155 6.33902 17.0234 6.27606 17.0873C6.26975 17.0938 6.26387 17.0997 6.25843 17.1052L3.70886 19.6547C3.2445 20.1191 2.45 19.7897 2.45 19.1334V12.5C2.45 10.2482 2.45096 8.60456 2.61995 7.34805C2.78721 6.10447 3.11159 5.30779 3.70981 4.71008Z" fill="url(#paint0_linear_72_124)" stroke="black" stroke-width="0.9"/>
@@ -114,7 +114,7 @@ const news = [
         </div>
       </div>
 
-      <a href="" class="mt-7 font-handrawn rounded-xl p-2 border-2 shadow-own inline-flex items-center gap-3">
+      <a href="" class="mt-7 font-handrawn rounded-xl p-2 border-2 shadow-own inline-flex items-center gap-3 text-xl ps-3">
         Check More
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="76" height="16" viewBox="0 0 106 46" fill="none">
