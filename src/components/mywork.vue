@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import 'vue3-carousel/carousel.css'
 import { Carousel, Slide } from 'vue3-carousel'
 
 const works = [
@@ -40,10 +40,7 @@ const categories = [
   { id: "tech-stack" ,title: "Tech Stack", description: "Details the technologies used and the roles involved in this case." },
   { id: "live-demo" ,title: "Live Demo", description: "Experience the demo firsthand with interactive visuals and functionality." }
 ]
-const selectedCategory = ref(null);
-const getCategory = () => {
-  return categories.find(item => item.id === selectedCategory.value);
-}
+
 </script>
 <template>
   <div class="m-3 overflow-x-hidden">

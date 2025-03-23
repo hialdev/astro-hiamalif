@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/partytown": "^2.1.4",
+    "@astrojs/sitemap": "^3.3.0",
     "@astrojs/vue": "^5.0.7",
     "@lottiefiles/dotlottie-vue": "^0.5.8",
     "@tailwindcss/vite": "^4.0.14",
