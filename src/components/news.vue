@@ -60,7 +60,7 @@ const news = [
       <p class="max-w-[50em]">Take a time for read My Articles or learn new thing with Learn Pack for free! Give the stars ✨ if you like it, comment if you hate it ⚡ </p>
 
       <div class="grid grid-cols-4 mt-8 gap-5 perspective-[1500px]">
-        <div v-for="(item, index) in news" :key="item.id" class="col-span-4 md:col-span-2 lg:col-span-1 bg-white border-2 border-slate-900 md:border-white md:hover:border-slate-900 cursor-pointer transition-all rounded-2xl p-5 hover:translate-z-10 hover:rotate-y-0 shadow-[5px_5px_0px_0px_#000] md:shadow-none md:hover:shadow-[5px_5px_0px_0px_#000] active:shadow-[5px_5px_0px_0px_#000]">
+        <div v-for="item in news" :key="item.id" class="col-span-4 sm:col-span-2 lg:col-span-1 bg-white border-2 border-slate-900 md:border-white md:hover:border-slate-900 cursor-pointer transition-all rounded-2xl p-5 hover:translate-z-10 hover:rotate-y-0 shadow-[5px_5px_0px_0px_#000] md:shadow-none md:hover:shadow-[5px_5px_0px_0px_#000] active:shadow-[5px_5px_0px_0px_#000]">
           <img src="https://placehold.co/160x90" alt="" class="block aspect-video w-full rounded-2xl object-cover overflow-hidden">
           <div class="mt-3 mb-3">
             <div class="mb-2 inline-block p-1 px-3 font-handrawn bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">
