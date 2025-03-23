@@ -18,7 +18,7 @@ const carouselConfig = {
   width: "content",
   pauseAutoplayOnHover: false,
   mouseWheel: true,
-  wrapAround: false,
+  wrapAround: true,
   breakpoints: {
     0: {
       itemsToShow: 1,
@@ -48,8 +48,9 @@ const getCategory = () => {
 <template>
   <div class="m-3 overflow-x-hidden">
     <div class="p-5 md:p-13 mb-5">
-      <h2 class="font-handrawn text-2xl mb-2">My Works</h2>
-      <div class="max-w-[25em]">All my work is a lovely journey; the more I learn, the more I realize how little I know.</div>
+      <h5 class="font-handrawn text-lg text-purple-800">My Case / Works</h5>
+      <h2 class="text-2xl font-medium">Thanks for All Clients for Trusted Me</h2>
+      <div class="max-w-[25em] text-sm">All my work is a lovely journey; the more I learn, the more I realize how little I know.</div>
       
       <div class="mt-4">
         <div class="flex items-center gap-1 cursor-pointer">

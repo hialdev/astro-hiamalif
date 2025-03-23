@@ -61,7 +61,7 @@ const news = [
             <p class="line-clamp-2 text-xs md:text-sm text-slate-500">{{ item.excerpt }}</p>
           </div>
           <div class="grid grid-cols-2 items-center overflow-hidden bg-slate-50 rounded-xl">
-            <div class="flex items-center justify-center p-1 px-2 hover:bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 m-1 rounded-lg gap-2">
+            <div class="flex items-center justify-center p-1 px-2 hover:bg-gradient-to-r active:bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 m-1 rounded-lg gap-2">
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M10.2443 17.7517C10.25 17.6247 10.4589 17.574 10.5213 17.6847C10.8144 18.2041 11.3129 18.9669 11.8784 19.3143C12.4439 19.6617 13.351 19.7597 13.9465 19.7851C14.0735 19.7909 14.1231 19.9998 14.0123 20.0621C13.493 20.3552 12.7313 20.8538 12.3839 21.4193C12.0365 21.9848 11.9384 22.8919 11.9131 23.4874C11.9073 23.6143 11.6972 23.6639 11.6361 23.5532C11.3429 23.0338 10.8444 22.2721 10.2777 21.9248C9.71225 21.5774 8.80516 21.4793 8.21082 21.4539C8.08387 21.4481 8.03309 21.2381 8.14388 21.1769C8.66321 20.8838 9.42605 20.3853 9.77342 19.8186C10.1196 19.2531 10.2189 18.346 10.2443 17.7517Z" fill="black"/>
@@ -104,6 +104,15 @@ const news = [
           </div>
         </div>
       </div>
+
+      <a href="" class="mt-7 font-handrawn rounded-xl p-2 border-2 shadow-own inline-flex items-center gap-3">
+        Check More
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="16" viewBox="0 0 106 46" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M92.348 19.9379H47.5437C44.9 19.9379 6.35712 18.8383 2.87852 19.8005C0.791359 20.2128 -0.739224 22.5495 0.373927 25.0236C1.62622 28.0476 10.5314 27.0854 15.958 27.0854C30.429 27.0854 44.9 27.6352 59.6492 27.6352L93.1829 27.3603C90.4 32.5835 77.8771 41.1054 83.582 45.0915C87.0606 47.7031 89.0086 43.9919 90.2609 42.6174C95.2701 36.9819 99.3052 32.0337 103.897 26.1233C109.463 18.8383 103.34 19.5256 93.0438 10.4538C91.0957 8.66694 83.4428 0.832224 82.4688 0.41987C79.6859 -0.954642 76.9031 1.24458 77.1814 4.13105C77.4596 7.70479 91.6523 18.5634 92.348 19.9379Z" fill="black"/>
+          </svg>
+        </div>
+      </a>
     </div>
   </section>
 </template>
