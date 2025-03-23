@@ -5,9 +5,17 @@ import News from "../components/news.vue";
 import Mywork from "../components/mywork.vue";
 
 const year = new Date().getFullYear();
+const data = {
+	title: "Portofolio Site of a Gen Z Fullstack Software Engineer - Muhammad Nur Alif",
+  description: "Explore the portfolio of Muhammad Nur Alif, a Gen Z software engineer showcasing expertise in web / mobile development, modern technologies, and innovative solutions.",
+  image: "https://example.com/images/portfolio-cover.jpg",
+  keywords: "Muhammad Nur Alif, software engineer, Gen Z developer, web development, frontend, backend, full stack, programming, coding portfolio",
+  showNavigate: true,
+  showChat: true,
+}
 ---
 
-<LayoutBase showNavigate={true} showChat={true}>
+<LayoutBase {...data} >
 	<!-- Section Hero -->
 	<Hero client:idle />
 	<!-- Section My Works -->
