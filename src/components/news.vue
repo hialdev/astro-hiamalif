@@ -56,8 +56,8 @@ const news = [
   <section class="bg-slate-50 m-3 rounded-2xl">
     <div class="p-5 md:p-13 mb-5">
       <h4 class="font-handrawn text-xl text-purple-800">Read My Articles!</h4>
-      <h2 class="text-3xl font-medium mb-1">Sharing is Caring, Be Useful Before Lossful</h2>
-      <p class="max-w-[50em]">Take a time for read My Articles or learn new thing with Learn Pack for free! Give the stars ✨ if you like it, comment if you hate it ⚡ </p>
+      <h2 class="text-3xl font-medium mb-1">Sharing is Caring — Be Useful Before Being Useless</h2>
+      <p class="max-w-[50em]">Take some time to read my articles or explore new knowledge with the Learn Pack—for free! Give it a ⭐ if you like it, and drop a ⚡ comment if you don’t!</p>
 
       <div class="grid grid-cols-4 mt-8 gap-5 perspective-[1500px]">
         <div v-for="item in news" :key="item.id" class="col-span-4 sm:col-span-2 lg:col-span-1 bg-white border-2 border-slate-900 md:border-white md:hover:border-slate-900 cursor-pointer transition-all rounded-2xl p-5 hover:translate-z-10 hover:rotate-y-0 shadow-[5px_5px_0px_0px_#000] md:shadow-none md:hover:shadow-[5px_5px_0px_0px_#000] active:shadow-[5px_5px_0px_0px_#000]">
