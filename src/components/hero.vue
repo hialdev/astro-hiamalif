@@ -66,7 +66,7 @@ console.log(chunkedImages);
           <div class="max-w-[30em] mb-5">
             Hi, I am <strong>Alif</strong>, you can call me <strong>AL</strong> because thats sounds cooler! Haha. I'm currently a <strong>Gen Z</strong> and <strong>Software Engineer</strong> with <strong>Fullstack Development</strong> ability (Front-end & Back-end) and over <strong>5 years</strong> of Experience
           </div>
-          <a href="" class="inline-flex items-center gap-2 px-4 py-1 mt-4 border-2 shadow-own border-dark rounded-xl">
+          <a href="https://drive.google.com/file/d/11A6DeZu6x_gnYaLrVuLXGG2OpAKzwNHs/view?usp=sharing" target="_blank"  class="inline-flex items-center gap-2 px-4 py-1 mt-4 border-2 shadow-own border-dark rounded-xl">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
                 <path d="M8.83334 8.33333C8.83334 7.58189 9.13185 6.86122 9.6632 6.32986C10.1946 5.79851 10.9152 5.5 11.6667 5.5H19.5V13.3333C19.5 14.35 19.9039 15.325 20.6228 16.0439C21.3417 16.7628 22.3167 17.1667 23.3333 17.1667H31.1667V31.6667C31.1667 32.4181 30.8682 33.1388 30.3368 33.6701C29.8055 34.2015 29.0848 34.5 28.3333 34.5H11.6667C10.9152 34.5 10.1946 34.2015 9.6632 33.6701C9.13185 33.1388 8.83334 32.4181 8.83334 31.6667V8.33333Z" fill="url(#paint0_linear_5_1037)" stroke="black"/>
@@ -80,7 +80,7 @@ console.log(chunkedImages);
                 </defs>
               </svg>
             </div>
-            <a href="https://drive.google.com/file/d/11A6DeZu6x_gnYaLrVuLXGG2OpAKzwNHs/view?usp=sharing" target="_blank" class="font-handrawn text-2xl">Save my CV</a>
+            <div class="font-handrawn text-2xl">Save my CV</div>
           </a>
         </div>
 
