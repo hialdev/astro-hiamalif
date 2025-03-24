@@ -1,6 +1,7 @@
 ---
 import LayoutBase from "./../layouts/base.astro"
 import Featured from "./../../components/work/featured.vue"
+import List from "./../../components/work/list.vue"
 
 const data = {
 	title: "My Work - Showcasing Projects & Experience",
@@ -10,10 +11,63 @@ const data = {
   showNavigate: true,
   showChat: true,
 }
+
+const works = [
+  {title: 'Enterprice Resource System for Construction & Building Company - Sahara', image: '/showcase/erpsahara.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Human Resource Information System for Outsourcing Company - Infomedia', image: '/showcase/gojobs.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Super Site Company with Multiple Brands - Artisan Kuliner Group', image: '/showcase/artisan.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Landing Page Management for Islamic Travel and Tour', image: '/showcase/goehajj.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Fellowship / Schoolarship Publication and Management System', image: '/showcase/esqfellowship.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'AI Chatbot with Sarcasm Personality - Sarcathic', image: '/showcase/sarchatic.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Portofolio Management System - Personal Site', image: '/showcase/portosite.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+]
 ---
 <LayoutBase {...data}>
-  <section class="m-3 p-5 px-12 text-dark rounded-2xl">
-    <h1 class="text-3xl my-4 font-medium">My Works / Projects</h1>
+  <section class="m-3 p-5 py-7 px-8 md:px-12 text-dark rounded-2xl bg-linear-65 from-40% from-slate-900 via-80% via-indigo-200 to-purple-400">
+    <h1 class="text-3xl mb-2 md:text-4xl font-medium bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 inline-block text-transparent bg-clip-text">My Works / Projects</h1>
+    <p class="text-white max-w-[40em]">Explore my latest projects, case studies, and experiences as a software engineer. Get insights into my work and skills.</p>
   </section>
   <Featured client:idle />
   <section class="">
@@ -24,6 +78,7 @@ const data = {
         </div>
         <input type="text" placeholder="Type 3 words for live search..." class="border-none outline-none p-3 rounded-2xl text-sm w-full">
       </div>
+      <List datas={works} />
     </div>
   </section>
 </LayoutBase>

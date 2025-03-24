@@ -3,13 +3,55 @@ import 'vue3-carousel/carousel.css'
 import { Carousel, Slide } from 'vue3-carousel'
 
 const works = [
-  {title: 'Enterprice Resource System for Construction & Building Company - Sahara', image: '/showcase/erpsahara.webp'},
-  {title: 'Human Resource Information System for Outsourcing Company - Infomedia', image: '/showcase/gojobs.webp'},
-  {title: 'Super Site Company with Multiple Brands - Artisan Kuliner Group', image: '/showcase/artisan.webp'},
-  {title: 'Landing Page Management for Islamic Travel and Tour', image: '/showcase/goehajj.webp'},
-  {title: 'Fellowship / Schoolarship Publication and Management System', image: '/showcase/esqfellowship.webp'},
-  {title: 'AI Chatbot with Sarcasm Personality - Sarcathic', image: '/showcase/sarchatic.webp'},
-  {title: 'Portofolio Management System - Personal Site', image: '/showcase/portosite.webp'},
+  {title: 'Enterprice Resource System for Construction & Building Company - Sahara', image: '/showcase/erpsahara.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Human Resource Information System for Outsourcing Company - Infomedia', image: '/showcase/gojobs.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Super Site Company with Multiple Brands - Artisan Kuliner Group', image: '/showcase/artisan.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Landing Page Management for Islamic Travel and Tour', image: '/showcase/goehajj.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Fellowship / Schoolarship Publication and Management System', image: '/showcase/esqfellowship.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'AI Chatbot with Sarcasm Personality - Sarcathic', image: '/showcase/sarchatic.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
+  {title: 'Portofolio Management System - Personal Site', image: '/showcase/portosite.webp',
+        tags: [
+          {id:1, name: 'Study Case'},
+          {id:2, name: 'UI'},
+          {id:3, name: 'Techstack'},
+          {id:4, name: 'Live Demo'},
+  ]},
 ]
 
 const carouselConfig = {
@@ -112,10 +154,7 @@ const categories = [
                   </svg>
                 </div>
                 <div class="font-handrawn flex items-center gap-1 text-sm md:text-lg">
-                  <span class="p-1 px-2 bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">Study Case</span>
-                  <span class="p-1 px-2 bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">UI</span>
-                  <span class="p-1 px-2 bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">Techstack</span>
-                  <span class="p-1 px-2 bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">Live Demo</span>
+                  <span v-for="tag in work.tags" :key="tag.id" class="p-1 px-2 bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">{{ tag.name }}</span>
                 </div>
               </div>
               <h2 class="text-lg md:text-xl text-slate-900 font-bold">{{ work.title }}</h2>
