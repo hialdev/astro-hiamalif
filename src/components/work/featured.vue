@@ -78,16 +78,10 @@ const carouselConfig = {
 </script>
 
 <template>
-  <section class="m-3 rounded-2xl p-4 border-2 bg-slate-50 to-purple-200">
-    <div class="flex py-3 px-4 md:px-8 md:py-5 mb-5 items-center gap-3">
-      <h2 class="text-xl md:text-2xl font-medium font-handrawn">
-        <span class="text-4xl text-purple-800">#</span>
-        Featured Works / Projects
-      </h2>
-    </div>
+  <section class="m-3 rounded-2xl p-4 to-purple-200">
     <div class="">
       <Carousel v-bind="carouselConfig" class="">
-        <Slide v-for="(fwork, index) in featuredWorks" :key="index" class="rounded-2xl overflow-hidden shadow-2xl">
+        <Slide v-for="(fwork, index) in featuredWorks" :key="index" class="rounded-2xl overflow-hidden">
           <div class="group relative rounded-2xl overflow-hidden cursor-pointer h-full">
             <img :src="fwork.image" :alt="fwork.title+' Image'" class="block w-100 w-full object-cover h-full h-100">
 
