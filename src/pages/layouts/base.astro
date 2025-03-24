@@ -53,7 +53,7 @@ const currentUrl = Astro.url;
     <link rel="canonical" href={currentUrl} />
 	</head>
 	<body class="pb-21">
-		{ showNavigate && <Navigation client:idle />}
+		{ showNavigate && <Navigation currentUrl={currentUrl} client:idle />}
 		<main>
 			<slot />
 
