@@ -80,7 +80,7 @@ console.log(chunkedImages);
                 </defs>
               </svg>
             </div>
-            <div class="font-handrawn text-2xl">Save my CV</div>
+            <a href="https://drive.google.com/file/d/11A6DeZu6x_gnYaLrVuLXGG2OpAKzwNHs/view?usp=sharing" target="_blank" class="font-handrawn text-2xl">Save my CV</a>
           </a>
         </div>
 
