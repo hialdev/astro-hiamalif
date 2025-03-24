@@ -78,7 +78,7 @@ const carouselConfig = {
 </script>
 
 <template>
-  <section class="m-3 rounded-2xl p-4 to-purple-200">
+  <section class="m-3 rounded-2xl">
     <div class="">
       <Carousel v-bind="carouselConfig" class="">
         <Slide v-for="(fwork, index) in featuredWorks" :key="index" class="rounded-2xl overflow-hidden">

@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-3 gap-4 rounded-2xl my-4 p-4 ">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-2xl my-4 p-4 ">
     <div v-for="(work, index) in props.datas" :key="index" class="bg-white rounded-3xl p-4 border-2 md:shadow-none md:hover:shadow-[5px_5px_0px_0px_#000] hover:shadow-[5px_5px_0px_0px_#000] active:shadow-[5px_5px_0px_0px_#000]">
       <div class="group relative rounded-2xl overflow-hidden cursor-pointer h-full">
         <img :src="work.image" :alt="work.title+' Image'" class="block w-100 mb-4 rounded-2xl w-full object-cover aspect-video">
