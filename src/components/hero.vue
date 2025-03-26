@@ -48,9 +48,9 @@ console.log(chunkedImages);
 
 <template>
   <section class="">
-    <div class="p-5 md:p-13 m-3 rounded-2xl bg-slate-50 dark:bg-zinc-800 overflow-x-hidden">
+    <div class="md:p-13 m-3 rounded-2xl bg-slate-50 dark:bg-zinc-800 overflow-x-hidden">
       <div class="grid grid-cols-2 items-center justify-between">
-        <div class="col-span-2 md:col-span-1 relative mb-8 md:mb-0">
+        <div class="p-5 col-span-2 md:col-span-1 relative mb-8 md:mb-0">
           <div class="flex flex-col items-start">
             <h6 class="text-purple-800 dark:text-purple-400 font-handrawn mb-3 md:mb-5 text-xl">Let’s Know About Me</h6>
             <!-- <div class="w-[7em] animate-bouncein h-[4em] mb-3 bg-purple-100 rounded-3xl flex items-center justify-center">
@@ -84,18 +84,18 @@ console.log(chunkedImages);
           </a>
         </div>
 
-        <div class="col-span-2 md:col-span-1 md:px-12 mx-auto relative rotate-x-20 rotate-z-5 rounded-3xl overflow-hidden">
+        <div class="py-5 col-span-2 md:col-span-1 md:px-12 mx-auto relative md:rotate-x-10 md:rotate-z-10 rounded-3xl overflow-hidden">
           <!-- <div class="flex items-center justify-center">
             <img src="" alt="" class="block aspect-square object-content">
           </div> -->
-          <div class="grid grid-cols-3 gap-4 origin-center rotate-10">
+          <div class="grid grid-cols-3 gap-3 origin-center rotate-10">
             <Herocarousel v-for="(datas, index) in chunkedImages" 
               :key="index"
               :images="datas"
               :autoplay="500 + index * 250" 
             />
           </div>
-          <div class="absolute top-0 end-0 start-0 bottom-0 rounded-[100px] mx-[-2.5em] my-[-1.5em] md:mx-[-3em] md:my-[-2em] bg-linear-to-t from-10% from-slate-50 dark:from-zinc-800 via-[#FFFFFF00] dark:via-[#21212100] to-slate-50 dark:to-zinc-800 to-90%"></div>
+          <div class="absolute top-0 end-0 start-0 bottom-0 rounded-[100px] mx-[-2.5em] my-[-1.5em] md:mx-[-3em] md:my-[-2em] bg-linear-to-t from-15% from-slate-50 dark:from-zinc-800 via-40% via-[#FFFFFF00] dark:via-[#21212100] to-slate-50 dark:to-zinc-800 to-85%"></div>
         </div>
       </div>
     </div>
