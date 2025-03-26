@@ -84,7 +84,7 @@ console.log(chunkedImages);
           </a>
         </div>
 
-        <div class="col-span-2 md:col-span-1 px-12 mx-auto relative rotate-x-20 rotate-z-5 rounded-3xl overflow-hidden">
+        <div class="col-span-2 md:col-span-1 md:px-12 mx-auto relative rotate-x-20 rotate-z-5 rounded-3xl overflow-hidden">
           <!-- <div class="flex items-center justify-center">
             <img src="" alt="" class="block aspect-square object-content">
           </div> -->
