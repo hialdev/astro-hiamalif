@@ -8,9 +8,9 @@ console.log(props.currentUrl)
 
 <template>
   <header class="fixed bottom-0 start-0 end-0 z-[9999] max-w-[fit-content] mx-auto flex jusitfy-center">
-    <div class="inline-flex mx-auto justify-center items-center gap-4 m-5 p-4 bg-white rounded-2xl shadow-2xl">
+    <div class="inline-flex mx-auto justify-center items-center gap-4 m-5 p-4 bg-white/75 backdrop-blur-md rounded-2xl ">
       <a href="/" class="group flex items-center justify-center cursor-pointer relative">
-        <div v-if="props.currentUrl.pathname == '/'" class="absolute bottom-0 h-[7px] rounded-xl rounded-b-none mb-[-1em] w-[2em] bg-linear-65 from-indigo-200 via-slate-50 to-purple-200"></div>
+        <div v-if="props.currentUrl.pathname == '/'" class="absolute bottom-0 h-[2px] bg-slate-900 w-[1rem] rounded-xl mb-[-1em]"></div>
 
         <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 end-0 ms-[-6em] me-[1em] mb-[2.3em]">
           <div class="font-handrawn text-2xl">Home</div>
@@ -33,7 +33,7 @@ console.log(props.currentUrl)
         </div>
       </a>
       <a href="/work" class="group flex items-center justify-center cursor-pointer relative">
-        <div v-if="props.currentUrl.pathname.startsWith('/work')" class="absolute bottom-0 h-[7px] rounded-xl rounded-b-none mb-[-1em] w-[2em] bg-linear-65 from-indigo-200 via-slate-50 to-purple-200"></div>
+        <div v-if="props.currentUrl.pathname.startsWith('/work')" class="absolute bottom-0 h-[2px] bg-slate-900 w-[1rem] rounded-xl mb-[-1em]"></div>
 
         <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 start-0 ms-[-6.4em] me-[1em] mb-[2.6em]">
           <div class="font-handrawn text-2xl whitespace-nowrap">My Works</div>
@@ -56,7 +56,7 @@ console.log(props.currentUrl)
         </div>
       </a> 
       <a href="/article" class="group flex items-center justify-center cursor-pointer relative">
-        <div v-if="props.currentUrl.pathname.startsWith('/article')" class="absolute bottom-0 h-[7px] rounded-xl rounded-b-none mb-[-1em] w-[2em] bg-linear-65 from-indigo-200 via-slate-50 to-purple-200"></div>
+        <div v-if="props.currentUrl.pathname.startsWith('/article')" class="absolute bottom-0 h-[2px] bg-slate-900 w-[1rem] rounded-xl mb-[-1em]"></div>
 
         <div class="hidden group-hover:flex group-active:flex items-start gap-2 absolute bottom-0 start-0 me-[-6em] ms-[1em] mb-[2.6em]">
           <img src="/icons/arrowskectch.svg" alt="Arrow Sketch Home Menu" class="block scale-x-[-1]">

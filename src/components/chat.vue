@@ -91,7 +91,7 @@ const keySendMessage = (e) => {
 
 <template>
   <div :class="['fixed flex flex-col items-end end-0 bottom-0 m-2 z-[10]', isClicked ? 'start-0' : '']">
-    <div ref="dropdownRef" v-if="isClicked" class="flex flex-col rounded-3xl rounded-br-none flex-1 bg-white shadow-2xl w-full max-w-[40em] p-5 start-0 end-0 h-full max-h-[86.5vh]">
+    <div ref="dropdownRef" v-if="isClicked" class="flex flex-col rounded-3xl rounded-br-none flex-1 bg-white/75 backdrop-blur-md w-full max-w-[40em] p-5 start-0 end-0 h-full max-h-[86.5vh]">
       <div class="flex items-center gap-2 mb-5">
         <img src="/me.jpg" alt="Chat Image for Me" class="aspect-square rounded-full w-[3em]">
         <div>
@@ -101,11 +101,11 @@ const keySendMessage = (e) => {
       </div>
 
       <div class="flex-1 overflow-auto">
-        <div class="bg-slate-50 text-slate-500 p-3 text-xs mb-3">
-          <span class="" v-if="isChatSaved"> Hello, <strong>{{ chatData.name }}!</strong></span> Start Conversation with me Now! I will reply you within a minute. Your conversation will be privated and stored for 3 days. Dont hesitate Ask me Anything! except how to understand the w0m4N 🗿
+        <div class="bg-slate-50 rounded-xl text-slate-500 p-3 text-xs mb-3">
+          <span class="" v-if="isChatSaved"> Hello, <strong>{{ chatData.name }}!</strong></span> Start a conversation with me now! I will reply within a minute. Your conversation will remain private and be stored for three days. Don't hesitate to ask me anything—except how to understand women 🗿
         </div>
         <div v-if="!isChatSaved" class="p-3 rounded-2xl bg-slate-100">
-          <h6 class="text-lg mb-3">Let's introduce who are you before chat 👋</h6>
+          <h6 class="text-lg mb-3">Let's introduce yourself before we chat! 👋</h6>
           <div class="flex flex-col">
             <input type="text" v-model="chatData.name" class="p-3 border-2 bg-white mb-2 rounded-2xl text-sm text-slate-900" placeholder="Your Name Plz 😊 ">
             <input type="email" v-model="chatData.email" class="p-3 border-2 bg-white mb-2 rounded-2xl text-sm text-slate-900" placeholder="Your Email Plz 🥺 ">

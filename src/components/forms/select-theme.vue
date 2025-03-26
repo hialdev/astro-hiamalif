@@ -30,7 +30,7 @@ const selectTheme = (theme) => {
 <template>
   <div ref="dropdownRef" class="relative w-full">
     <!-- Selected Theme (Button) -->
-    <div class="rounded-xl w-full p-2 border-2 min-w-[18em] cursor-pointer flex items-center justify-between" @click="isOpen = !isOpen">
+    <div class="rounded-xl w-full p-2 border-2 min-w-[13em] cursor-pointer flex items-center justify-between" @click="isOpen = !isOpen">
       <div class="flex items-center gap-2">
         <img :src="currentTheme.image" :alt="`Image ${currentTheme.title} Theme`" class="block max-h-[3em] aspect-video rounded-xl">
         <div class="text-xs">{{ currentTheme.title }}</div>
