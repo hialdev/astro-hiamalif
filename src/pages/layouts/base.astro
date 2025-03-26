@@ -52,6 +52,17 @@ const currentUrl = Astro.url;
 
     <!-- Canonical URL -->
     <link rel="canonical" href={currentUrl} />
+
+    <script is:inline>
+      const theme = localStorage.getItem('theme');
+
+      if (
+        theme === 'dark' ||
+        (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
 	</head>
 	<body class="pb-21">
 		{ showNavigate && <Navigation currentUrl={currentUrl} client:idle />}
