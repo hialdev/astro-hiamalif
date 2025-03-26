@@ -64,7 +64,7 @@ const currentUrl = Astro.url;
       }
     </script>
 	</head>
-	<body class="pb-21">
+	<body class="pb-21 dark:bg-stone-900 dark:text-stone-200">
 		{ showNavigate && <Navigation currentUrl={currentUrl} client:idle />}
 		<main>
 			<slot />
@@ -73,11 +73,11 @@ const currentUrl = Astro.url;
 		</main>
 		<footer>
 			<div class="m-3 rounded-xl overflow-hidden">
-				<div class="bg-gradient-to-r from-indigo-200 via-slate-100 text-center to-purple-200 p-10">
-					<h5 class="font-handrawn text-xl text-purple-800">You've Reached the End of the Content</h5>
+				<div class="bg-gradient-to-r from-indigo-200 dark:from-indigo-800 via-slate-100 dark:via-stone-800 text-center to-purple-200 dark:to-purple-800 p-10">
+					<h5 class="font-handrawn text-xl text-purple-800 dark:text-purple-400">You've Reached the End of the Content</h5>
 					<h2 class="text-2xl font-medium">But My Journey Never Ends!</h2>
 					<p class="text-sm mb-3 max-w-[30em] mx-auto">I hope my content is helpful to you! If you’d like to discuss anything, let’s chat via Float Chat or send me a DM on my social media.</p>
-					<div class="inline-flex p-2 px-4 rounded-xl bg-white justify-center mx-auto items-center gap-3 mt-3">
+					<div class="inline-flex p-2 px-4 rounded-xl bg-white dark:bg-stone-50 justify-center mx-auto items-center gap-3 mt-3">
 						<a href="" class="flex items-center justify-center">
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
                 <path d="M11 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V11C2 11.7956 2.31607 12.5587 2.87868 13.1213C3.44129 13.6839 4.20435 14 5 14H11C11.7956 14 12.5587 13.6839 13.1213 13.1213C13.6839 12.5587 14 11.7956 14 11V5C14 4.20435 13.6839 3.44129 13.1213 2.87868C12.5587 2.31607 11.7956 2 11 2ZM8 10.5C7.50555 10.5 7.0222 10.3534 6.61107 10.0787C6.19995 9.80397 5.87952 9.41352 5.6903 8.95671C5.50108 8.49989 5.45157 7.99723 5.54804 7.51227C5.6445 7.02732 5.8826 6.58186 6.23223 6.23223C6.58186 5.8826 7.02732 5.6445 7.51227 5.54804C7.99723 5.45157 8.49989 5.50108 8.95671 5.6903C9.41352 5.87952 9.80397 6.19995 10.0787 6.61107C10.3534 7.0222 10.5 7.50555 10.5 8C10.5 8.66304 10.2366 9.29893 9.76777 9.76777C9.29893 10.2366 8.66304 10.5 8 10.5Z" fill="#EFE7FF"/>

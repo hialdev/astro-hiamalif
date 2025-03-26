@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "DM Sans", sans-serif; 
   --font-dmsans: "DM Sans", sans-serif; 
@@ -57,4 +59,12 @@ button,a{
 
 .shadow-own:hover{
   box-shadow: 7px 7px 0px 0px #000;
+}
+
+.dark .shadow-own{
+  box-shadow: 5px 5px 0px 0px #f1f1f1;
+}
+
+.dark .shadow-own:hover{
+  box-shadow: 7px 7px 0px 0px #f1f1f1;
 }

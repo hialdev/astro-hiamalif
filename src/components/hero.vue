@@ -48,25 +48,25 @@ console.log(chunkedImages);
 
 <template>
   <section class="">
-    <div class="p-5 md:p-13 m-3 rounded-2xl bg-slate-50 dark:bg-slate-900 overflow-x-hidden">
+    <div class="p-5 md:p-13 m-3 rounded-2xl bg-slate-50 dark:bg-zinc-800 overflow-x-hidden">
       <div class="grid grid-cols-2 items-center justify-between">
         <div class="col-span-2 md:col-span-1 relative mb-8 md:mb-0">
           <div class="flex flex-col items-start">
-            <h6 class="text-purple-800 font-handrawn mb-3 md:mb-5 text-xl">Let’s Know About Me</h6>
+            <h6 class="text-purple-800 dark:text-purple-400 font-handrawn mb-3 md:mb-5 text-xl">Let’s Know About Me</h6>
             <!-- <div class="w-[7em] animate-bouncein h-[4em] mb-3 bg-purple-100 rounded-3xl flex items-center justify-center">
               <DotLottieVue autoplay class="h-[24em] w-[20em] object-cover" src="./../../public/lottie_icons/hi.lottie" />
             </div> -->
-            <h1 class="text-4xl md:text-5xl mb-0 max-w-[12em] font-semibold text-dark font-dmsans inline">Hello, Mate! 👋 Welcome to My Personal Space</h1>
+            <h1 class="text-4xl md:text-5xl mb-0 max-w-[12em] font-semibold font-dmsans inline">Hello, Mate! 👋 Welcome to My Personal Space</h1>
           </div>
           <div class="flex items-center my-8">
             <img src="/me.jpg" width="170" height="170" alt="Foto aing" class="w-[100px] h-[100px] md:w-[170px] md:h-[170px] block aspect-square rounded-full">
-            <img src="/icons/arrowsprinkle.webp" alt="Arrow Sprinkle" class="block ms-[-1em] w-content">
+            <img src="/icons/arrowsprinkle.webp" alt="Arrow Sprinkle" class="block ms-[-1em] w-content dark:invert">
             <div class="font-handrawn text-emerald-600 animate-wiggle text-2xl ms-[-1em] mt-[2em]">Open to Work!</div>
           </div>
           <div class="max-w-[30em] mb-5">
             Hi, I am <strong>Alif</strong>, you can call me <strong>AL</strong> because thats sounds cooler! Haha. I'm currently a <strong>Software Engineer</strong> with <strong>Fullstack Development</strong> ability (Front-end & Back-end) and over <strong>5 years</strong> of Experience
           </div>
-          <a href="https://drive.google.com/file/d/11A6DeZu6x_gnYaLrVuLXGG2OpAKzwNHs/view?usp=sharing" target="_blank"  class="inline-flex items-center gap-2 px-4 py-1 mt-4 border-2 shadow-own border-dark rounded-xl">
+          <a href="https://drive.google.com/file/d/11A6DeZu6x_gnYaLrVuLXGG2OpAKzwNHs/view?usp=sharing" target="_blank"  class="inline-flex items-center gap-2 px-4 py-1 mt-4 border-2 shadow-[5px_5px_0px_0px_#000] dark:shadow-[5px_5px_0px_0px_#f1f1f1] border-dark rounded-xl">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
                 <path d="M8.83334 8.33333C8.83334 7.58189 9.13185 6.86122 9.6632 6.32986C10.1946 5.79851 10.9152 5.5 11.6667 5.5H19.5V13.3333C19.5 14.35 19.9039 15.325 20.6228 16.0439C21.3417 16.7628 22.3167 17.1667 23.3333 17.1667H31.1667V31.6667C31.1667 32.4181 30.8682 33.1388 30.3368 33.6701C29.8055 34.2015 29.0848 34.5 28.3333 34.5H11.6667C10.9152 34.5 10.1946 34.2015 9.6632 33.6701C9.13185 33.1388 8.83334 32.4181 8.83334 31.6667V8.33333Z" fill="url(#paint0_linear_5_1037)" stroke="black"/>
@@ -84,7 +84,7 @@ console.log(chunkedImages);
           </a>
         </div>
 
-        <div class="col-span-2 md:col-span-1 mx-auto relative rotate-x-20 rotate-z-10 rounded-3xl overflow-hidden">
+        <div class="col-span-2 md:col-span-1 px-12 mx-auto relative rotate-x-20 rotate-z-5 rounded-3xl overflow-hidden">
           <!-- <div class="flex items-center justify-center">
             <img src="" alt="" class="block aspect-square object-content">
           </div> -->
@@ -95,7 +95,7 @@ console.log(chunkedImages);
               :autoplay="500 + index * 250" 
             />
           </div>
-          <div class="absolute top-0 end-0 start-0 bottom-0 rounded-[100px] mx-[-2.5em] my-[-1.5em] md:mx-[-3em] md:my-[-2em] bg-linear-to-t from-10% from-slate-50 via-[#FFFFFF00] to-slate-50 to-90%"></div>
+          <div class="absolute top-0 end-0 start-0 bottom-0 rounded-[100px] mx-[-2.5em] my-[-1.5em] md:mx-[-3em] md:my-[-2em] bg-linear-to-t from-10% from-slate-50 dark:from-zinc-800 via-[#FFFFFF00] dark:via-[#21212100] to-slate-50 dark:to-zinc-800 to-90%"></div>
         </div>
       </div>
     </div>

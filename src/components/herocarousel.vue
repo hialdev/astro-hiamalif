@@ -22,7 +22,7 @@ const carouselConfig = {
   <div class="">
     <Carousel v-bind="carouselConfig">
       <Slide v-for="(image, index) in images" :key="index" class="mb-0">
-        <img :src="image" :alt="'carousel Image ' + index" class="w-[7em] h-[7em] object-contain p-3 rounded-2xl bg-white">
+        <img :src="image" :alt="'carousel Image ' + index" class="w-[7em] h-[7em] object-contain p-3 rounded-2xl bg-white dark:bg-stone-200">
       </Slide>
     </Carousel>
   </div>

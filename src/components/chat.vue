@@ -91,7 +91,7 @@ const keySendMessage = (e) => {
 
 <template>
   <div :class="['fixed flex flex-col items-end end-0 bottom-0 m-2 z-[10]', isClicked ? 'start-0' : '']">
-    <div ref="dropdownRef" v-if="isClicked" class="flex flex-col rounded-3xl rounded-br-none flex-1 bg-white/75 backdrop-blur-md w-full max-w-[40em] p-5 start-0 end-0 h-full max-h-[86.5vh]">
+    <div ref="dropdownRef" v-if="isClicked" class="flex flex-col rounded-3xl rounded-br-none flex-1 bg-white/75 dark:bg-stone-950/50 backdrop-blur-md w-full max-w-[40em] p-5 start-0 end-0 h-full max-h-[86.5vh]">
       <div class="flex items-center gap-2 mb-5">
         <img src="/me.jpg" alt="Chat Image for Me" class="aspect-square rounded-full w-[3em]">
         <div>
@@ -104,24 +104,24 @@ const keySendMessage = (e) => {
         <div class="bg-slate-50 rounded-xl text-slate-500 p-3 text-xs mb-3">
           <span class="" v-if="isChatSaved"> Hello, <strong>{{ chatData.name }}!</strong></span> Start a conversation with me now! I will reply within a minute. Your conversation will remain private and be stored for three days. Don't hesitate to ask me anything—except how to understand women 🗿
         </div>
-        <div v-if="!isChatSaved" class="p-3 rounded-2xl bg-slate-100">
+        <div v-if="!isChatSaved" class="p-3 rounded-2xl bg-slate-100 dark:bg-stone-700">
           <h6 class="text-lg mb-3">Let's introduce yourself before we chat! 👋</h6>
           <div class="flex flex-col">
             <input type="text" v-model="chatData.name" class="p-3 border-2 bg-white mb-2 rounded-2xl text-sm text-slate-900" placeholder="Your Name Plz 😊 ">
             <input type="email" v-model="chatData.email" class="p-3 border-2 bg-white mb-2 rounded-2xl text-sm text-slate-900" placeholder="Your Email Plz 🥺 ">
             <input type="number" v-model="chatData.phone" class="p-3 border-2 bg-white mb-2 rounded-2xl text-sm text-slate-900" placeholder="Your Number Plz 👉👈">
-            <button @click="saveChatData" class="p-2 px-4 rounded-2xl bg-slate-900 text-white font-handrawn cursor-pointer text-xl">Yups, This is Me</button>
+            <button @click="saveChatData" class="p-2 px-4 rounded-2xl bg-slate-900 text-white font-handrawn cursor-pointer dark:bg-black text-xl">Yups, This is Me</button>
           </div>
         </div>
         <div v-for="(chat, index) in chats" :key="index" class="">
-          <div v-if="chat.is_user" class="rounded-3xl p-4 border rounded-br-none bg-slate-50 mb-2 text-xs ms-10">
+          <div v-if="chat.is_user" class="rounded-3xl p-4 border rounded-br-none bg-slate-50 dark:text-stone-950 mb-2 text-xs ms-10">
             <div>
               {{ chat.message }}
             </div>
             <div class="text-[10px] text-slate-500">{{ timeAgo(chat.timestamp) }}</div>
           </div>
 
-          <div v-if="!chat.is_user" class="rounded-3xl p-4 rounded-bl-none bg-slate-900 text-white mb-2 text-xs me-10">
+          <div v-if="!chat.is_user" class="rounded-3xl p-4 rounded-bl-none bg-slate-900 dark:bg-stone-950 text-white mb-2 text-xs me-10">
             <div>
               {{ chat.message }}
             </div>
@@ -131,7 +131,7 @@ const keySendMessage = (e) => {
       </div>
 
       <div class="flex items-end gap-3 mt-3">
-        <textarea v-model="message" @keydown="keySendMessage" class="flex-1 shadow-own border-2 text-xs p-3 rounded-xl bg-slate-100" placeholder="Type Message.." rows="3"></textarea>
+        <textarea v-model="message" @keydown="keySendMessage" class="flex-1 shadow-own border-2 text-xs p-3 rounded-xl bg-slate-100 dark:bg-stone-950" placeholder="Type Message.." rows="3"></textarea>
         <button @click="sendMessage" class="cursor-pointer p-3 bg-slate-900 text-purple-100 rounded-full flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><defs><path id="lsiconSendFilled0" d="M12.97 2.67a.5.5 0 0 0-.64-.64l-11 4a.5.5 0 0 0-.016.934l4.433 1.773l2.9-3.09l.707.707l-2.98 3.176l1.662 4.156a.5.5 0 0 0 .934-.015z"/></defs><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><use href="#lsiconSendFilled0"/><use href="#lsiconSendFilled0"/></g></svg>
         </button>
@@ -142,7 +142,7 @@ const keySendMessage = (e) => {
       <div class="group flex items-center justify-center cursor-pointer relative">
         <div v-if="!isClicked" class="hidden group-hover:flex group-active:flex items-end gap-1 absolute bottom-0 start-0 ms-[-4.4em] me-[2em] mb-[3.8em]">
           <div class="font-handrawn text-2xl">Discuss Anything!</div>
-          <img src="/icons/arrowskectch.svg" alt="Arrow Sketch Home Menu" class="block">
+          <img src="/icons/arrowskectch.svg" alt="Arrow Sketch Home Menu" class="block dark:invert">
         </div>
 
         <div v-if="!isClicked" class="animate-wiggle group-hover:hidden group-active:hidden absolute top-0 end-0 start-0 bottom-0">

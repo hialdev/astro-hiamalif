@@ -53,24 +53,24 @@ const news = [
 </script>
 
 <template>
-  <section class="bg-slate-50 m-3 rounded-2xl">
+  <section class="bg-slate-50 m-3 rounded-2xl dark:bg-stone-800">
     <div class="p-5 md:p-13 mb-5">
-      <h4 class="font-handrawn text-xl text-purple-800">Read My Articles!</h4>
+      <h4 class="font-handrawn text-xl text-purple-800 dark:text-purple-400">Read My Articles!</h4>
       <h2 class="text-3xl font-medium mb-1">Sharing is Caring — Be Useful Before Being Useless</h2>
       <p class="max-w-[50em]">Take some time to read my articles or explore new knowledge with the Learn Pack—for free! Give it a ⭐ if you like it, and drop a ⚡ comment if you don’t!</p>
 
       <div class="grid grid-cols-4 mt-8 gap-5 perspective-[1500px]">
-        <div v-for="item in news" :key="item.id" class="col-span-4 sm:col-span-2 lg:col-span-1 bg-white border-2 border-slate-900 md:border-white md:hover:border-slate-900 cursor-pointer transition-all rounded-2xl p-5 hover:translate-z-10 hover:rotate-y-0 shadow-[5px_5px_0px_0px_#000] md:shadow-none md:hover:shadow-[5px_5px_0px_0px_#000] active:shadow-[5px_5px_0px_0px_#000]">
+        <div v-for="item in news" :key="item.id" class="col-span-4 sm:col-span-2 lg:col-span-1 bg-white dark:bg-stone-900 border-2 border-slate-900 dark:border-stone-50 md:dark:border-stone-900 md:border-white md:hover:border-slate-900 dark:hover:border-stone-50 cursor-pointer transition-all rounded-2xl p-5 hover:translate-z-10 hover:rotate-y-0 shadow-[5px_5px_0px_0px_#000] dark:shadow-[5px_5px_0px_0px_#f1f1f1] md:shadow-none md:dark:shadow-none md:hover:shadow-[5px_5px_0px_0px_#000] md:dark:hover:shadow-[5px_5px_0px_0px_#f1f1f1] active:shadow-[5px_5px_0px_0px_#000]">
           <img src="https://placehold.co/160x90" alt="" class="block aspect-video w-full rounded-2xl object-cover overflow-hidden">
           <div class="mt-3 mb-3">
-            <div class="mb-2 inline-block p-1 px-3 font-handrawn bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">
+            <div class="mb-2 inline-block dark:text-stone-900 p-1 px-3 font-handrawn bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 rounded-full whitespace-nowrap">
               {{ item.is_learning_pack ? 'Learning Pack' : 'Article' }}
             </div>
             <h6 class="text-sm/4 md:text-lg/6 mb-1 font-medium">{{ item.title }}</h6>
-            <p class="line-clamp-2 text-xs md:text-sm text-slate-500">{{ item.excerpt }}</p>
+            <p class="line-clamp-2 text-xs md:text-sm text-slate-500 dark:text-stone-300/75">{{ item.excerpt }}</p>
           </div>
-          <div class="grid grid-cols-2 items-center overflow-hidden bg-slate-50 rounded-xl">
-            <div class="flex items-center justify-center p-1 px-2 hover:bg-gradient-to-r active:bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 m-1 rounded-lg gap-2">
+          <div class="grid grid-cols-2 items-center overflow-hidden bg-slate-50 dark:bg-stone-800 rounded-xl">
+            <div class="group flex items-center justify-center p-1 px-2 hover:bg-gradient-to-r active:bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 m-1 rounded-lg gap-2">
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M10.2443 17.7517C10.25 17.6247 10.4589 17.574 10.5213 17.6847C10.8144 18.2041 11.3129 18.9669 11.8784 19.3143C12.4439 19.6617 13.351 19.7597 13.9465 19.7851C14.0735 19.7909 14.1231 19.9998 14.0123 20.0621C13.493 20.3552 12.7313 20.8538 12.3839 21.4193C12.0365 21.9848 11.9384 22.8919 11.9131 23.4874C11.9073 23.6143 11.6972 23.6639 11.6361 23.5532C11.3429 23.0338 10.8444 22.2721 10.2777 21.9248C9.71225 21.5774 8.80516 21.4793 8.21082 21.4539C8.08387 21.4481 8.03309 21.2381 8.14388 21.1769C8.66321 20.8838 9.42605 20.3853 9.77342 19.8186C10.1196 19.2531 10.2189 18.346 10.2443 17.7517Z" fill="black"/>
@@ -93,9 +93,9 @@ const news = [
                   </defs>
                 </svg>
               </div>
-              <div class="font-handrawn text-slate-900">14000</div>
+              <div class="font-handrawn text-slate-900 dark:text-stone-100 dark:group-hover:text-stone-900">14000</div>
             </div>
-            <div class="flex items-center justify-center p-1 px-2 hover:bg-gradient-to-r active:bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 m-1 rounded-lg gap-2">
+            <div class="group flex items-center justify-center p-1 px-2 hover:bg-gradient-to-r active:bg-gradient-to-r from-indigo-200 via-slate-100 to-purple-200 m-1 rounded-lg gap-2">
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M3.70981 4.71008L3.71008 4.70981C4.30779 4.11159 5.10447 3.78721 6.34805 3.61995C7.60456 3.45096 9.24824 3.45 11.5 3.45H13.875C14.9879 3.45 15.8001 3.45024 16.4437 3.49408C17.0832 3.53764 17.5234 3.62273 17.8958 3.77672C18.4174 3.99306 18.8913 4.31002 19.2904 4.70951C19.6896 5.10903 20.0061 5.58326 20.222 6.10512L20.2223 6.1058C20.3767 6.47744 20.4621 6.91715 20.5058 7.55655C20.5498 8.19997 20.55 9.01208 20.55 10.125C20.55 11.2379 20.5498 12.05 20.5058 12.6936C20.4621 13.3331 20.3767 13.7732 20.2222 14.1456L20.2221 14.1457C19.7855 15.1991 18.9483 16.0359 17.8947 16.472L17.8942 16.4723C17.5226 16.6267 17.0829 16.7121 16.4435 16.7558C15.8 16.7998 14.9879 16.8 13.875 16.8H6.997C6.98917 16.8 6.98065 16.7999 6.97151 16.7999C6.88089 16.7992 6.72975 16.798 6.58771 16.8566C6.44521 16.9155 6.33902 17.0234 6.27606 17.0873C6.26975 17.0938 6.26387 17.0997 6.25843 17.1052L3.70886 19.6547C3.2445 20.1191 2.45 19.7897 2.45 19.1334V12.5C2.45 10.2482 2.45096 8.60456 2.61995 7.34805C2.78721 6.10447 3.11159 5.30779 3.70981 4.71008Z" fill="url(#paint0_linear_72_124)" stroke="black" stroke-width="0.9"/>
@@ -108,7 +108,7 @@ const news = [
                   </defs>
                 </svg>
               </div>
-              <div class="font-handrawn text-slate-900">14000</div>
+              <div class="font-handrawn text-slate-900 dark:text-stone-100 dark:group-hover:text-stone-900">14000</div>
             </div>
           </div>
         </div>
@@ -116,9 +116,9 @@ const news = [
 
       <a href="" class="mt-7 font-handrawn rounded-xl p-2 border-2 shadow-own inline-flex items-center gap-3 text-xl ps-3">
         Check More
-        <div>
+        <div class="dark:text-stone-50">
           <svg xmlns="http://www.w3.org/2000/svg" width="76" height="16" viewBox="0 0 106 46" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M92.348 19.9379H47.5437C44.9 19.9379 6.35712 18.8383 2.87852 19.8005C0.791359 20.2128 -0.739224 22.5495 0.373927 25.0236C1.62622 28.0476 10.5314 27.0854 15.958 27.0854C30.429 27.0854 44.9 27.6352 59.6492 27.6352L93.1829 27.3603C90.4 32.5835 77.8771 41.1054 83.582 45.0915C87.0606 47.7031 89.0086 43.9919 90.2609 42.6174C95.2701 36.9819 99.3052 32.0337 103.897 26.1233C109.463 18.8383 103.34 19.5256 93.0438 10.4538C91.0957 8.66694 83.4428 0.832224 82.4688 0.41987C79.6859 -0.954642 76.9031 1.24458 77.1814 4.13105C77.4596 7.70479 91.6523 18.5634 92.348 19.9379Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M92.348 19.9379H47.5437C44.9 19.9379 6.35712 18.8383 2.87852 19.8005C0.791359 20.2128 -0.739224 22.5495 0.373927 25.0236C1.62622 28.0476 10.5314 27.0854 15.958 27.0854C30.429 27.0854 44.9 27.6352 59.6492 27.6352L93.1829 27.3603C90.4 32.5835 77.8771 41.1054 83.582 45.0915C87.0606 47.7031 89.0086 43.9919 90.2609 42.6174C95.2701 36.9819 99.3052 32.0337 103.897 26.1233C109.463 18.8383 103.34 19.5256 93.0438 10.4538C91.0957 8.66694 83.4428 0.832224 82.4688 0.41987C79.6859 -0.954642 76.9031 1.24458 77.1814 4.13105C77.4596 7.70479 91.6523 18.5634 92.348 19.9379Z" fill="currentColor"/>
           </svg>
         </div>
       </a>
