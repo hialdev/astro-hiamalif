@@ -32,17 +32,17 @@ const currentUrl = Astro.url;
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
-    <meta property="og:title" content={title ?? "Muhammad Nur Alif - Full Stack Developer & Gen Z Engineer"} />
+    <meta property="og:title" content={title ?? "Muhammad Nur Alif - Full Stack Developer & Engineer"} />
     <meta property="og:description" content={description ?? "Muhammad Nur Alif, software engineer, full stack developer, web development, frontend, backend, full stack, programming, coding portfolio"} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={image ?? '/me.jpg'} />
     <meta property="og:url" content={currentUrl} />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title ?? "Muhammad Nur Alif - Full Stack Developer & Gen Z Engineer"} />
-    <meta name="twitter:description" content={description ?? "Muhammad Nur Alif, software engineer, Gen Z developer, web development, frontend, backend, full stack, programming, coding portfolio"} />
-    <meta name="twitter:image" content={image} />
+    <meta name="twitter:title" content={title ?? "Muhammad Nur Alif - Full Stack Developer & Engineer"} />
+    <meta name="twitter:description" content={description ?? "Muhammad Nur Alif, software engineer, Full stack developer, web development, frontend, backend, full stack, programming, coding portfolio"} />
+    <meta name="twitter:image" content={image ?? '/me.jpg'} />
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" />
