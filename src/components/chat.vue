@@ -1,10 +1,15 @@
 <script setup>
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
+import { onClickOutside } from '@vueuse/core';
 import { ref } from 'vue';
 
 const isClicked = ref(false);
 const chatData = ref({name: "", email: "", phone: ""})
 const isChatSaved = ref(false)
+const dropdownRef = ref(null);
+onClickOutside(dropdownRef, () => {
+  isClicked.value = false;
+});
 const chats = ref([
   // { is_user: 1, message: "Hey! How's your day going?", timestamp: "2025-03-20 10:00:01" },
   // { is_user: 0, message: "Pretty good! Working on some code. You?", timestamp: "2025-03-20 10:00:05" },
@@ -86,7 +91,7 @@ const keySendMessage = (e) => {
 
 <template>
   <div :class="['fixed flex flex-col items-end end-0 bottom-0 m-2 z-[10]', isClicked ? 'start-0' : '']">
-    <div v-if="isClicked" class="flex flex-col rounded-3xl rounded-br-none flex-1 bg-white shadow-2xl w-full max-w-[40em] p-5 start-0 end-0 h-full max-h-[86.5vh]">
+    <div ref="dropdownRef" v-if="isClicked" class="flex flex-col rounded-3xl rounded-br-none flex-1 bg-white shadow-2xl w-full max-w-[40em] p-5 start-0 end-0 h-full max-h-[86.5vh]">
       <div class="flex items-center gap-2 mb-5">
         <img src="/me.jpg" alt="Chat Image for Me" class="aspect-square rounded-full w-[3em]">
         <div>

@@ -2,6 +2,7 @@
 import "../../styles/global.css";
 import Navigation from "../../components/navigation.vue";
 import Chat from "../../components/chat.vue";
+import Settings from "../../components/settings.vue";
 
 interface Props{
   title: string,
@@ -56,14 +57,14 @@ const currentUrl = Astro.url;
 		{ showNavigate && <Navigation currentUrl={currentUrl} client:idle />}
 		<main>
 			<slot />
-
+      <Settings client:idle />
       { showChat && <Chat client:idle /> }
 		</main>
 		<footer>
 			<div class="m-3 rounded-xl overflow-hidden">
 				<div class="bg-gradient-to-r from-indigo-200 via-slate-100 text-center to-purple-200 p-10">
-					<h6 class="font-handrawn text-purple-800 mb-2">You've Reached the End of the Content</h6>
-					<h2 class="text-xl font-medium">But My Journey Never Ends!</h2>
+					<h5 class="font-handrawn text-xl text-purple-800">You've Reached the End of the Content</h5>
+					<h2 class="text-2xl font-medium">But My Journey Never Ends!</h2>
 					<p class="text-sm mb-3 max-w-[30em] mx-auto">I hope my content is helpful to you! If you’d like to discuss anything, let’s chat via Float Chat or send me a DM on my social media.</p>
 					<div class="inline-flex p-2 px-4 rounded-xl bg-white justify-center mx-auto items-center gap-3 mt-3">
 						<a href="" class="flex items-center justify-center">
